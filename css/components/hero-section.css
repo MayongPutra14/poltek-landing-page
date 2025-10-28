@@ -9,7 +9,7 @@
 
 /* Hero Section */
 .hero-section {
-  padding-top: calc(var(--space-100) + var(--space-16));
+  padding-top: calc(var(--space-100) + var(--space-32));
   height: 100vh;
   background-size: cover;
   background-image: url("../../assets/images/model-images/building-outside.webp");
