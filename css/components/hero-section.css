@@ -1,56 +1,64 @@
 .overlay {
   border-image: fill 1;
-  border-image-source:  
-  linear-gradient(
-      148deg,
-      hsla(206, 34%, 12%, 0.8),
-      hsla(206, 34%, 12%, 0.5)
-    );
+  border-image-source: linear-gradient(
+    148deg,
+    hsla(206, 34%, 12%, 0.8),
+    hsla(206, 34%, 12%, 0.5)
+  );
 }
 
 /* Hero Section */
 .hero-section {
-    padding-top: calc(var(--space-100) + var(--space-32));
-    height: 100vh;
-    background-size: cover;
-    background-image: url('../../assets/images/model-images/building-outside.webp');
-    background-position: center;
+  padding-top: calc(var(--space-100) + var(--space-16));
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../../assets/images/model-images/building-outside.webp");
+  background-position: center;
 }
 
 .hero-section h1 {
-    font-size: var(--fn-inter-h1);
-    font-weight: var(--fw-bold);
-    text-align: center;
-    background-image: linear-gradient(to right, var(--screaming-green-400), var(--blue-shark-400));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+  font-size: var(--fn-inter-h1);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    var(--screaming-green-400),
+    var(--blue-shark-400)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .hero-section h4 {
-    font-size: var(--fn-inter-h4);
-    color: var(--white-50);
-    font-weight: var(--fw-semibold);
-    padding-block: var(--space-16);
-    text-align: center;
+  font-size: var(--fn-inter-h4);
+  color: var(--white-50);
+  font-weight: var(--fw-semibold);
+  padding-block: var(--space-20);
+  text-align: center;
 }
 
-
 @media (min-width: 48rem) {
-    .hero-section {
+  .hero-section {
+    padding-top: 0;
     display: grid;
     place-items: center;
     padding-top: var(--space-80);
-    }
+  }
 
-    .btn-cta {
-        flex-direction: row;
-        width: 50%;  
-        margin: 0 auto;
-    }
+  .btn-cta {
+    flex-direction: row;
+    width: 50%;
+    margin: 0 auto;
+  }
 
-    .hero-section h4 {
-        margin-block: var(--space-32);
-    }
+  .hero-section h1 {
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .hero-section h4 {
+    margin-block: var(--space-32);
+  }
 }

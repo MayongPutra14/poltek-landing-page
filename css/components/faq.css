@@ -100,8 +100,7 @@
   }
 
   .circle-clur-b-r {
-    top:  calc(var(--space-100) * 3 + var(--space-20));
+    top: calc(var(--space-100) * 3 + var(--space-20));
     right: 0;
-    
   }
 }

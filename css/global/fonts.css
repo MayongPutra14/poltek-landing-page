@@ -39,7 +39,7 @@
 
   /* Font size */
   /* --fn-inter-h1: clamp(2.805rem, 1.785rem + 5.1vw, 5.61rem); */
-  --fn-inter-h1: clamp(2.5rem, 1.585rem + 2.5vw, 5.61rem);
+  --fn-inter-h1: clamp(2.5rem, 1.585rem + 3.5vw, 5.61rem);
   --fn-inter-h2: clamp(2.104rem, 1.339rem + 2.83vw, 4.209rem);
   --fn-inter-h4: clamp(1.185rem, 0.754rem + 2.15vw, 2.369rem);
   --fn-inter-h5: clamp(0.888rem, 0.565rem + 1.62vw, 1.777rem);

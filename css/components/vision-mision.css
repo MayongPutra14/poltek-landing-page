@@ -69,8 +69,6 @@
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.22);
 }
 
-
-
 @media (min-width: 48rem) {
   .vision {
     padding-bottom: var(--space-100);

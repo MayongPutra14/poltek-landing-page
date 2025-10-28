@@ -32,11 +32,7 @@ nav .profile-name {
 
 /* The name of Institute */
 .profile-name h6 {
-  display: none;
-}
-
-.profile-name .mobile {
-    background-image: linear-gradient(
+  background-image: linear-gradient(
       to right,
       var(--screaming-green-400),
       var(--blue-shark-400)
@@ -50,7 +46,25 @@ nav .profile-name {
     font-family: var(--Inter);
     font-size: var(--fn-inter-h6);
     display: block;
-  }
+  /* display: none; */
+}
+
+.profile-name .mobile {
+  background-image: linear-gradient(
+    to right,
+    var(--screaming-green-400),
+    var(--blue-shark-400)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  padding-left: var(--space-16);
+  font-weight: var(--fw-bold);
+  font-family: var(--Inter);
+  font-size: var(--fn-inter-h6);
+  display: block;
+}
 
 /* Navigation links */
 nav ul {
@@ -115,21 +129,21 @@ nav ul li a.active::before {
     background-color: var(--blue-shark-950);
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     width: 50%;
     height: 100vh;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     padding-top: 2rem;
-    transform: translateX(100%);
+    transform: translateX(-100%);
     transition: all 0.5s ease;
     opacity: 0;
     z-index: -1;
   }
 
   nav ul.slide {
-    transform: translateY(0%);
+    transform: translateX(0%);
     opacity: 1;
   }
 }
@@ -157,24 +171,6 @@ nav ul li a.active::before {
 
   nav .profile-name {
     width: 40%;
-  }
-
-  /* Make name of university it appear in desktop */
-  .profile-name h6 {
-    background-image: linear-gradient(
-      to right,
-      var(--screaming-green-400),
-      var(--blue-shark-400)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    padding-left: var(--space-16);
-    font-weight: var(--fw-bold);
-    font-family: var(--Inter);
-    font-size: var(--fn-inter-h6);
-    display: block;
   }
 
   nav.scrolled {
